@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOFILO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69c6141019.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div id="container">
+        <nav>
+            <img src="logo-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experiance</a></li>
+                <li><a href="#">Protifillo</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>WEB DESIGNER/DEVELOPER</p>
+            <h1>Hi,<span>I'm Ranganayagi S</span> </br>here from India.</h1>
+        </div>
+    </div>
+
+   </div>
+   <!----------------About----------------!-->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="0_g_9zyfXCcKTrvYtt.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I’m Ranganayagi, a dedicated Web Designer and Developer with two years of experience in creating responsive and user-centric websites. My expertise lies in front-end development using frameworks and tools like Bootstrap, Flexbox, and jQuery to craft clean, modern, and interactive web interfaces. I focus on delivering seamless user experiences through well-structured code and design, ensuring compatibility across all devices and browsers. With a keen eye for detail and a passion for learning new technologies, I strive to build web solutions that are not only visually appealing but also performance-driven and scalable.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="Opentab('skills', this)">Skills</p>
+                <p class="tab-links" onclick="Opentab('experience', this)">Experience</p>
+                <p class="tab-links" onclick="Opentab('education', this)">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                    <li><span>App Development</span><br>Building App Interfaces</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Frontend Developer</span><br>2 Years Experience</li>
+                    <li><span>Freelancing</span><br>Completed 10+ Projects</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor’s Degree in CS</span><br>XYZ University</li>
+                    <li><span>Certifications</span><br>Frontend & UX/UI Courses</li>
+                </ul>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+   </div>
+   <div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Service</h1> 
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Using on through the first years in wordpress themes and plugin based developing the ASI company.</p>
+                <a href="#">Learn More..</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Al so including the UI/UX Design invoves to figma based mini work projects inti ASI company and improving the carrer growup.</p>
+                <a href="#">Learn More..</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p>App desin work based on python oriented backend and the HTML3 based frond design in VI company work projects.</p>
+                <a href="#">Learn More..</a>
+            </div>
+            
+         
+        </div>  
+    </div>
+   </div>
+   <!-----------------Portfilo----------------!-->
+   <div id="portfilo">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>    
+        <div class="work-list">
+            <div class="work">
+                <img src="221128120638-four-day-work-week-stock.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The Application developing an throught out on the game and social post on the google platform in the playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="221128120638-four-day-work-week-stock.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The Application developing an throught out on the game and social post on the google platform in the playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="221128120638-four-day-work-week-stock.jpg">
+                <div class="layer">
+                    <h3>Online shoping App</h3>
+                    <p>The Application developing an throught out on the game and social post on the google platform in the playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function Opentab(tabname, element) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        element.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
